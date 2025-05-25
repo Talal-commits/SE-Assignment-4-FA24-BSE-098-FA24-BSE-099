@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+}
+
+.image img {
+    height: 50px;
+    width: auto;
+}
+
+.links li {
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.links li a{
+    padding-bottom: 7px;
+}
+
+.links li a:hover{
+    color: #DE3B40;
+    border-bottom: 3px solid #DE3B40;
+}
+
+.links li a {
+    text-decoration: none;
+    color: rgb(126, 126, 126);
+}
+
+.first {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10vh;
+    flex-grow: 1;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.logout {
+    margin-left: auto;
+}
+
+.logout button {
+    padding: 8px 50px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    background-color: #DE3B40;
+    border: none;
+}
+
+.logout button:hover{
+    color: #DE3B40;
+    background-color: #FBF0F0;
+    transition-duration: 0.2s;   
+}
+
+h3{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 40px;
+    color: #333;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.card{
+    border: 2px solid rgb(214, 214, 214);
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center; 
+    padding: 25px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img{
+    height: 300px;
+    width: 230px;
+}
+
+.card button{
+    padding: 10px 80px;
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border: 2px solid #1F826D;
+    color: #1F826D;
+    background-color: #e4fcf6;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer{
+    display: flex;
+    gap: 20px;
+}
+
+.footer button{
+    padding: 8px 50px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #DE3B40;
+    background-color: #FBF0F0;
+    border: none;
+}
+
+.footer button:hover{
+    cursor: pointer;
+    background-color: #ffe0e0;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+#animal-type,
+#filter-by,
+#search-input {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #1F826D;
+    border-radius: 8px;
+    background-color: #e4fcf6;
+    color: #1F826D;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#search-input::placeholder {
+    color: #aaa;
+}
+
+#animal-type:hover,
+#filter-by:hover,
+#search-input:hover,
+#animal-type:focus,
+#filter-by:focus,
+#search-input:focus {
+    border-color: #DE3B40;
+    background-color: #FBF0F0;
+    color: #DE3B40;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 40px; /* to match your .numbers spacing */
+}
+
+.pagination button {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  background-color: aliceblue;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.pagination button:hover {
+  background-color: rgb(44, 40, 40);
+  color: white;
+  border-radius: 100%;
+}

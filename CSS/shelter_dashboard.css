@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+}
+
+.image img {
+    height: 50px;
+    width: auto;
+}
+
+.links li {
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.links li a{
+    padding-bottom: 7px;
+}
+
+.links li a:hover{
+    color: #DE3B40;
+    border-bottom: 3px solid #DE3B40;
+}
+
+.links li a {
+    text-decoration: none;
+    color: rgb(126, 126, 126);
+}
+
+.first {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10vh;
+    flex-grow: 1;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.logout {
+    margin-left: auto;
+}
+
+.logout button {
+    padding: 8px 50px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    background-color: #DE3B40;
+    border: none;
+}
+
+.logout button:hover{
+    color: #DE3B40;
+    background-color: #FBF0F0;
+    transition-duration: 0.2s;
+}
+
+main img {
+    width: 100%;
+    height: 500px;
+    opacity: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+main div{
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    background: transparent;
+    top: 180px;
+    left: 150px;
+} 
+
+main div h4, h5{
+    background: none;
+}
+
+main div h4{
+    font-size: 45px;
+    color: aliceblue;
+}
+
+main div h5{
+    font-size: 22px;
+    color: aliceblue;
+    font-family: cursive;
+    margin-top: 35px;
+}
+
+.AddPet{
+    padding: 12px 70px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    background-color: #DE3B40;
+    border: none;
+    margin-top: 20px;
+}
+
+.AddPet:hover{
+    color: #DE3B40;
+    border-radius: 20px;
+    background-color: #FBF0F0;
+    transition-duration: 0.3s;   
+}
+
+table{
+    padding: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+}
+
+.heading{
+    font-size: 50px;
+    color: #DE3B40;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+.header td{
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+table tr td{
+    border-bottom: 2px solid grey;
+    padding: 40px 58px 20px 58px;
+}
+
+.Approve {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    background-color: #DE3B40;
+    border: none;
+}
+
+.Approve:hover{
+    color: #DE3B40;
+    background-color: #FBF0F0;
+    transition-duration: 0.3s; 
+}
+
+/* Modal container - hidden by default */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.5); /* semi-transparent background */
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: 20px;
+  border: 2px solid #1F826D;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 10px #1F826D;
+}
+
+/* Close button (X) */
+.close {
+  color: #1F826D;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #DE3B40;
+  text-decoration: none;
+}
+
+/* Form elements styling */
+#addPetForm label {
+  display: block;
+  margin: 12px 0 6px;
+  color: #1F826D;
+  font-weight: bold;
+}
+
+#addPetForm input[type="text"],
+#addPetForm input[type="number"],
+#addPetForm select,
+#addPetForm input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #1F826D;
+  border-radius: 6px;
+  background-color: #e4fcf6;
+  color: #1F826D;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+#addPetForm input[type="text"]:focus,
+#addPetForm input[type="number"]:focus,
+#addPetForm select:focus,
+#addPetForm input[type="file"]:focus {
+  border-color: #DE3B40;
+  background-color: #FBF0F0;
+  outline: none;
+}
+
+#addPetForm button {
+  margin-top: 20px;
+  background-color: #1F826D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+#addPetForm button:hover {
+  background-color: #DE3B40;
+}
