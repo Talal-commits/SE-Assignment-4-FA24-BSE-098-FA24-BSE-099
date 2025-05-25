@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/signup_page.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="../Java Script/signup_page.js" defer></script>
+    <title>Login PetHaven</title>
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <h1>Sign Up</h1>
+            <form action="#">
+                <div class="input">
+                    <i class='bx bx-user' ></i>
+                    <input type="email" name="text" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input">
+                    <i class='bx bx-rename' ></i>
+                    <input type="text" name="text" id="First" placeholder="First Name" required>
+                </div>
+                <div class="input">
+                    <i class='bx bx-rename' ></i>
+                    <input type="text" name="text" id="Second" placeholder="Second Name" required>
+                </div>
+                <div class="input">
+                    <i class='bx bx-store-alt' ></i>
+                    <input type="text" name="text" id="shelter_name" placeholder="Shelter Name (Only for Shelter Owners)">
+                </div>
+                <div class="input">
+                    <i class='bx bx-lock-alt'></i>
+                    <input type="password" name="password" id="password" placeholder="Enter your Password" required>
+                </div>
+                <div class="links">
+                    <span><p>What you want to do?</p></span>
+                    <label for="checkbox1">
+                        <input type="radio" name="checkbox" id="checkbox1"" required>Adopt Pets
+                    </label>
+                    <label for="checkbox2">
+                        <input type="radio" name="checkbox" id="checkbox2" required>Sell Pets
+                    </label>
+                    
+                </div>
+                <div class="links">
+                    <a href="login_page.html">Already have an Account?</a>
+                </div>
+                <div class="button">
+                    <button type="submit" id="submit">submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/@denserai/embed-chat@1/dist/web.min.js";
+        Chatbot.init({
+        chatbotId: "0682d0df-528d-4c12-9c60-ac1d3bf8d1b5",
+        });
+    </script>  
+    
+</body>
+
+</html>

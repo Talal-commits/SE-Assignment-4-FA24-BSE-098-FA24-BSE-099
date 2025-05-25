@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/landing_page.css" />
+    <script defer src="../Java Script/landing_page.js"></script>
+    <title>PetHaven</title>
+  </head>
+  <body>
+    <header>
+      <div class="first">
+        <div class="image">
+          <img src="../images/logo.png" alt="" />
+        </div>
+        <div class="links">
+          <li><a href="landing_page.html">Pet Listing</a></li>
+          <li><a href="shelter_Dashboard.html">Shelter Dashboard</a></li>
+          <li><a href="user_feedback.html">User Feedback</a></li>
+        </div>
+        <div class="logout">
+          <button>logout</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="filter-section">
+      <label for="animal-type">Animal Type:</label>
+      <select id="animal-type">
+        <option value="all">All</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+
+      <label for="filter-by">Filter by:</label>
+      <select id="filter-by">
+        <option value="name">Name</option>
+        <option value="age">Age</option>
+      </select>
+
+      <input type="text" id="search-input" placeholder="Enter search term" />
+    </div>
+
+    <h3>Available Pets</h3>
+
+    <!-- Removed pagination -->
+    <!-- <div id="pagination" class="pagination"></div> -->
+
+    <main>
+      <!-- Pet cards will be dynamically injected here -->
+    </main>
+
+    <script type="module">
+      import Chatbot from "https://cdn.jsdelivr.net/npm/@denserai/embed-chat@1/dist/web.min.js";
+      Chatbot.init({
+        chatbotId: "0682d0df-528d-4c12-9c60-ac1d3bf8d1b5",
+      });
+    </script>
+  </body>
+</html>

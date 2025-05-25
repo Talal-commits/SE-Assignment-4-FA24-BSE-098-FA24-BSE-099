@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/user_feedback.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="../images/logo.png" alt="PetHaven Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="landing_page.html">Pet Listing</a></li>
+          <li><a href="shelter_Dashboard.html">Shelter Dashboard</a></li>
+          <li><a href="user_feedback.html" class="active">User Feedback</a></li>
+        </ul>
+        <div class="logout">
+          <button>Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="feedback-container">
+      <h2>We Value Your Feedback!</h2>
+      <p>Help us improve PetHaven by sharing your thoughts.</p>
+
+      <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email"
+          required
+        />
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+          <option value="" disabled selected>Select rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Average</option>
+          <option value="2">2 - Poor</option>
+          <option value="1">1 - Terrible</option>
+        </select>
+
+        <label for="message">Feedback:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Write your feedback here..."
+          required
+        ></textarea>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 PetHaven. All rights reserved.</p>
+    </footer>
+
+    <script type="module">
+      import Chatbot from "https://cdn.jsdelivr.net/npm/@denserai/embed-chat@1/dist/web.min.js";
+      Chatbot.init({
+        chatbotId: "0682d0df-528d-4c12-9c60-ac1d3bf8d1b5",
+      });
+    </script>
+  </body>
+</html>

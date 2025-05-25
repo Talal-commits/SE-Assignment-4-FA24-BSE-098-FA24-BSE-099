@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/shelter_dashboard.css">
+    <script src="../Java Script/shelter_dashboard.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="first">
+            <div class="image">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="links">
+                <li><a href="landing_page.html">Pet Listing</a></li>
+                <li><a href="shelter_Dashboard.html">Shelter Dashboard</a></li>
+                <li><a href="user_feedback.html">User Feedback</a></li>
+            </div>
+            <div class="logout">
+                <button>logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <img src="../images/pexels-chevanon-1108099.jpg" alt="">
+
+        <div>
+            <h4>Shelter Dashboard</h2>
+            <h5>Manage Shelter pets and stream line adoption with ease</h5>
+            <button class="AddPet">Add New Pet</button>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <div class="table">
+            <table>
+                <header class="heading"><center>Adoption requests Overview</center></header>
+                <tr class="header">
+                    <td><b>Status</b></td>
+                    <td><b>Pet Name</b></td>
+                    <td><b>Type</b></td>
+                    <td><b>Age / Years</b></td>
+                    <td><b>Action</b></td>
+                </tr>
+    
+                <tr>
+                    <td>Waiting for adoption</td>
+                    <td>Doggy</td>
+                    <td>Dog</td>
+                    <td>4</td>
+                    <td><button class="Approve">Approve Adoption</button></td>
+                </tr>
+    
+                <tr>
+                    <td>Waiting for adoption</td>
+                    <td>Billi</td>
+                    <td>Cat</td>
+                    <td>3</td>
+                    <td><button class="Approve">Approve Adoption</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </main>
+
+   <!-- Modal for adding new pet -->
+<div id="addPetModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2>Add New Pet</h2>
+    <form id="addPetForm">
+      <label for="pet-type">Type:</label>
+      <select id="pet-type" name="petType" required>
+        <option value="" disabled selected>Select type</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+
+      <label for="pet-name">Name:</label>
+      <input type="text" id="pet-name" name="petName" placeholder="Enter pet name" required />
+
+      <label for="pet-age">Age (years):</label>
+      <input type="number" id="pet-age" name="petAge" min="0" placeholder="Enter pet age" required />
+
+      <label for="pet-picture">Picture:</label>
+      <input type="file" id="pet-picture" name="petPicture" accept="image/*" required />
+
+      <button type="submit">Add Pet</button>
+    </form>
+  </div>
+</div>
+
+
+    
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/@denserai/embed-chat@1/dist/web.min.js";
+        Chatbot.init({
+        chatbotId: "0682d0df-528d-4c12-9c60-ac1d3bf8d1b5",
+        });
+    </script>  
+    
+</body>
+</html>
